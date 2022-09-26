@@ -9,6 +9,7 @@ Currently, we only support an installation from source.
 
 You need the following tools:
 - pipx
+- patchelf
 - a rust toolchain
 - [maturin](https://github.com/PyO3/maturin)
 
@@ -29,7 +30,7 @@ In order to work at the same time on all the packages, your directory structure 
 To build, and execute example code from rust do the following:
 ```
 $ cd dspa4fl-example
-$ poetry@main install
+$ poetry@master install
 $ python
 >>> import dpsa4fl_example.main as dm
 >>> dm.call_sum(2,3)
